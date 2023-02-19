@@ -9,9 +9,9 @@ import {
 } from "recharts";
 
 const data = [
-  { name: "December", TotalMeeting: 20 },
-  { name: "January", TotalMeeting: 50 },
-  { name: "February", TotalMeeting: 70 },
+  { name: "December", TotalMeeting: 0 },
+  { name: "January", TotalMeeting: 0 },
+  { name: "February", TotalMeeting: 7 },
 ];
 
 const Chart = ({ aspect, title }) => {
