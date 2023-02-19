@@ -11,7 +11,7 @@ import {
 const data = [
   { name: "December", TotalMeeting: 0 },
   { name: "January", TotalMeeting: 0 },
-  { name: "February", TotalMeeting: 7 },
+  { name: "February", TotalMeeting: 2 },
 ];
 
 const Chart = ({ aspect, title }) => {

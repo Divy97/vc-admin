@@ -19,26 +19,14 @@ export const userInputs = [
   },
   {
     id: 4,
-    label: "Phone",
-    type: "text",
+    label: "Password",
+    type: "password",
     placeholder: "+1 234 567 89",
   },
   {
     id: 5,
-    label: "Password",
+    label: "Confirm Password",
     type: "password",
-  },
-  {
-    id: 6,
-    label: "Address",
-    type: "text",
-    placeholder: "Elton St. 216 NewYork",
-  },
-  {
-    id: 7,
-    label: "Country",
-    type: "text",
-    placeholder: "USA",
   },
 ];
 
