@@ -9,12 +9,9 @@ import {
 } from "recharts";
 
 const data = [
-  { name: "January", Total: 1200 },
-  { name: "February", Total: 2100 },
-  { name: "March", Total: 800 },
-  { name: "April", Total: 1600 },
-  { name: "May", Total: 900 },
-  { name: "June", Total: 1700 },
+  { name: "December", TotalMeeting: 20 },
+  { name: "January", TotalMeeting: 50 },
+  { name: "February", TotalMeeting: 70 },
 ];
 
 const Chart = ({ aspect, title }) => {
@@ -39,7 +36,7 @@ const Chart = ({ aspect, title }) => {
           <Tooltip />
           <Area
             type="monotone"
-            dataKey="Total"
+            dataKey="TotalMeeting"
             stroke="#8884d8"
             fillOpacity={1}
             fill="url(#total)"

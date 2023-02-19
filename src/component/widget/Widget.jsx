@@ -9,7 +9,7 @@ const Widget = ({ type }) => {
   let data;
 
   //temporary
-  const amount = 100;
+  const amount = 200;
   const diff = 20;
 
   switch (type) {
@@ -31,7 +31,7 @@ const Widget = ({ type }) => {
       break;
     case "order":
       data = {
-        title: "ORDERS",
+        title: "MEETINGS",
         isMoney: false,
         link: "View all orders",
         icon: (
