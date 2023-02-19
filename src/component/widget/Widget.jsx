@@ -9,8 +9,8 @@ const Widget = ({ type }) => {
   let data;
 
   //temporary
-  const amount = 200;
-  const diff = 20;
+  const amount = 10;
+  let amount2 = 7;
 
   switch (type) {
     case "user":
@@ -33,16 +33,7 @@ const Widget = ({ type }) => {
       data = {
         title: "MEETINGS",
         isMoney: false,
-        link: "View all orders",
-        icon: (
-          <ShoppingCartOutlinedIcon
-            className="icon"
-            style={{
-              backgroundColor: "rgba(218, 165, 32, 0.2)",
-              color: "goldenrod",
-            }}
-          />
-        ),
+        link: "View all meeting stats",
       };
       break;
     case "earning":
@@ -50,12 +41,6 @@ const Widget = ({ type }) => {
         title: "EARNINGS",
         isMoney: true,
         link: "View net earnings",
-        icon: (
-          <MonetizationOnOutlinedIcon
-            className="icon"
-            style={{ backgroundColor: "rgba(0, 128, 0, 0.2)", color: "green" }}
-          />
-        ),
       };
       break;
     case "balance":
@@ -83,17 +68,11 @@ const Widget = ({ type }) => {
       <div className="left">
         <span className="title">{data.title}</span>
         <span className="counter">
-          {data.isMoney && "$"} {amount}
+          {data.isMoney && "$"} {data.title === "USERS" ? amount : amount2}
         </span>
         <span className="link">{data.link}</span>
       </div>
-      <div className="right">
-        <div className="percentage positive">
-          <KeyboardArrowUpIcon />
-          {diff} %
-        </div>
-        {data.icon}
-      </div>
+      <div className="right">{data.icon}</div>
     </div>
   );
 };
